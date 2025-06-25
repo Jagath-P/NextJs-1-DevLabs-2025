@@ -1,3 +1,4 @@
+import Link from "next/link";
 import LoginForm from "../components/loginForm";
 export default function Login() {
   return (
@@ -7,10 +8,10 @@ export default function Login() {
         <h2 className="text-2xl font-semibold mb-2">Sign in to your account</h2>
         <p className="mb-8">
           Or{" "}
-          <a href="#" className="text-blue-700 ">
+          <Link href="/register" className="text-blue-700 ">
             {" "}
             register for a new account
-          </a>
+          </Link>
         </p>
         <LoginForm />
       </div>
